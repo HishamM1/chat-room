@@ -66,7 +66,7 @@ A Multi-Client Chat Server using Sockets and Threads in Java is a server applica
 
 1. Open the server project using either IntelliJ IDEA or NetBeans.
 
-   For IntelliJ IDEA:
+   - For IntelliJ IDEA:
         - Click on "File" in the menu.
         - Select "Project Structure".
         - In the "Project Settings" section, choose "Modules".
@@ -76,7 +76,7 @@ A Multi-Client Chat Server using Sockets and Threads in Java is a server applica
         - Click "OK".
         - Apply the changes and close the window.
 
-   For NetBeans:
+   - For NetBeans:
         - Right-click on the server project in NetBeans.
         - Select "Project Properties".
         - Go to the "Run" category.
@@ -86,7 +86,8 @@ A Multi-Client Chat Server using Sockets and Threads in Java is a server applica
         - If the JavaFX plugin is not installed, go to "Tools" -> "Plugins", select "Available Plugins", and install JavaFX.
 
 2. If the client and server are on different machines but on the same network, follow these additional steps:
-        - Obtain the IP address of the WiFi.
+
+   	- Obtain the IP address of the WiFi.
         - Open the "SocketHandler" file in the client project.
         - Locate the line that says:
           ```
@@ -97,6 +98,6 @@ A Multi-Client Chat Server using Sockets and Threads in Java is a server applica
 
 
 ## Running the Project
-    - Make sure server is running.
+    - Make sure the server is running.
     - Run the client.
     - If you want to run the admin GUI, run the Main file in the server project.
