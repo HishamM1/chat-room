@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.server.EditUserController">
+    <children>
+        <Label layoutX="213.0" layoutY="132.0" text="Enter user's username">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" layoutX="174.0" layoutY="187.0" prefHeight="26.0" prefWidth="252.0" />
+        <Button layoutX="215.0" layoutY="257.0" onAction="#editUser" prefHeight="26.0" prefWidth="170.0" text="Edit" textAlignment="CENTER" />
+      <Label layoutX="224.0" layoutY="48.0" text="Edit User">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

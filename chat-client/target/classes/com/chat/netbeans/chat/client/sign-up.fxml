@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.client.SignUpController">
+     <children>
+        <TextField fx:id="usernameField" layoutX="196.0" layoutY="152.0" prefHeight="26.0" prefWidth="208.0" promptText="Username" />
+        <PasswordField fx:id="passwordField" layoutX="196.0" layoutY="187.0" prefHeight="26.0" prefWidth="208.0" promptText="Password" />
+        <Button fx:id="signupButton" layoutX="238.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="26.0" prefWidth="124.0" text="Sign Up" />
+        <Button fx:id="cancelButton" layoutX="274.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <Label alignment="CENTER" layoutX="234.0" layoutY="53.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

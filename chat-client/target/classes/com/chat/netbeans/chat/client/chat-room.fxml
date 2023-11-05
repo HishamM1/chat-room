@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.client.ChatRoomController">
+
+    <top>
+        <VBox alignment="CENTER">
+            <Label style="-fx-font-size: 20px;" text="Chat Room" />
+            <Label fx:id="welcomeLabel" style="-fx-font-size: 16px;" />
+        </VBox>
+    </top>
+        <center>
+            <TextArea fx:id="messageTextArea" prefHeight="300.0" prefWidth="600.0" wrapText="true" VBox.vgrow="ALWAYS" />
+        </center>
+        <bottom>
+            <HBox spacing="10">
+                <TextField fx:id="messageField" prefHeight="26.0" prefWidth="321.0" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+               <Insets top="5.0" />
+            </HBox.margin></TextField>
+                <Button onMouseClicked="#handleSendEvent" prefHeight="26.0" prefWidth="77.0" text="Send">
+            <HBox.margin>
+               <Insets top="5.0" />
+            </HBox.margin></Button>
+                <ComboBox fx:id="statusComboBox" onAction="#handleStatusChange" prefHeight="26.0" prefWidth="86.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Available" />
+                            <String fx:value="Busy" />
+                        </FXCollections>
+                    </items>
+            <HBox.margin>
+               <Insets top="5.0" />
+            </HBox.margin>
+                </ComboBox>
+                <Button onMouseClicked="#handleSaveLogChat" prefHeight="26.0" prefWidth="101.0" text="Save Log Chat">
+                    <HBox.margin>
+                        <Insets top="5.0" />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </bottom>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+
+</BorderPane>

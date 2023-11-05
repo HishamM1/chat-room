@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.server.CreateUserController">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="144.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.60000000000002" minWidth="10.0" prefWidth="215.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.60000000000002" minWidth="10.0" prefWidth="188.60000000000002" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="144.4" minHeight="10.0" prefHeight="132.4" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="116.6" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="243.2" minHeight="10.0" prefHeight="39.20000000000002" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="198.2" minHeight="29.600000000000023" prefHeight="190.2" />
+    </rowConstraints>
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" prefHeight="18.0" prefWidth="236.0" text="Add a User" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+
+        <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="315.0" text="Username:" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label alignment="CENTER" prefHeight="18.0" prefWidth="202.0" text="Password:" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Button onAction="#signup" prefHeight="26.0" prefWidth="237.0" text="Add" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+    </children>
+
+</GridPane>

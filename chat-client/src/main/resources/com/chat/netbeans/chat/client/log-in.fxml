@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="280.0" prefWidth="428.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.client.LoginController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="205.0" text="Login" GridPane.columnIndex="1" GridPane.columnSpan="2">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+    </Label>
+
+    <Label text="Username:" GridPane.rowIndex="2" />
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Password:" GridPane.rowIndex="3" />
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Button fx:id="loginButton" prefHeight="26.0" onAction="#handleLogin" prefWidth="230.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button fx:id="signupButton" prefHeight="26.0" onAction="#handleSignup" prefWidth="86.0" text="Signup" GridPane.rowIndex="4" />
+    <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancel" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" />
+        <ColumnConstraints hgrow="SOMETIMES" />
+        <ColumnConstraints hgrow="NEVER" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints vgrow="NEVER" />
+      <RowConstraints vgrow="NEVER" />
+      <RowConstraints vgrow="NEVER" />
+    </rowConstraints>
+</GridPane>

@@ -1,0 +1,6 @@
+com\chat\netbeans\chat\client\SignUpController.class
+module-info.class
+com\chat\netbeans\chat\client\Client.class
+com\chat\netbeans\chat\client\LoginController.class
+com\chat\netbeans\chat\client\SocketHandler.class
+com\chat\netbeans\chat\client\ChatRoomController.class

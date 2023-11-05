@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+
+
+<VBox alignment="CENTER" cacheShape="false" centerShape="false" prefHeight="333.0" prefWidth="561.0" scaleShape="false" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.server.ServerController">
+      <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Button fx:id="showAllUsers" onAction="#ShowAllUsers" text="Show All Users" />
+   <Button fx:id="deleteUser" layoutX="267.0" layoutY="145.0" onAction="#onDeleteUser" prefHeight="26.0" prefWidth="93.0" text="Delete User" />
+   <Button fx:id="createUser" layoutX="267.0" layoutY="228.0" onAction="#onCreateUser" prefHeight="26.0" prefWidth="97.0" text="Create User" />
+   <Button fx:id="editUser" contentDisplay="BOTTOM" layoutX="267.0" layoutY="205.0" onAction="#onEditUser" prefHeight="26.0" prefWidth="97.0" text="Edit User" />
+   <effect>
+      <Blend />
+   </effect>
+</VBox>

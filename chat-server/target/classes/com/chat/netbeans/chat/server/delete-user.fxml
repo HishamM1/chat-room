@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chat.netbeans.chat.server.DeleteUserController">
+    <children>
+        <VBox alignment="CENTER" fillWidth="false" />
+         <Button layoutX="208.0" layoutY="255.0" onAction="#deleteUser" prefHeight="26.0" prefWidth="119.0" text="Delete" />
+         <TextField fx:id="usernameField" alignment="CENTER" layoutX="144.0" layoutY="173.0" prefHeight="26.0" prefWidth="247.0" promptText="Username" />
+         <Label layoutX="202.0" layoutY="57.0" text="Delete User">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
