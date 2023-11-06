@@ -1,6 +1,8 @@
 ### Description
 A Multi-Client Chat Server using Sockets and Threads in Java is a server application that allows multiple clients to connect and chat with each other simultaneously. It utilizes sockets for communication between the server and clients, and threads for handling each client independently.
 
+https://github.com/HishamM1/chat-room/assets/85462680/2c2802c3-2a34-4a2c-818f-c7633b97a56c
+
 ### Project Requirements
 
 - JDK 17
